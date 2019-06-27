@@ -1,0 +1,38 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@microsoft/api-documenter",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@microsoft/gulp-core-build",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@microsoft/node-library-build",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@microsoft/rush-stack-compiler-3.2",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "gulp",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "rollup",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "tslint",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "libraries" ]
+    }
+  ]
+}
