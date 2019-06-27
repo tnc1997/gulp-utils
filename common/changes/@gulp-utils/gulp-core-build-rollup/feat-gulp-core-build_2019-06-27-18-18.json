@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@gulp-utils/gulp-core-build-rollup",
+      "comment": "Add the @gulp-utils/gulp-core-build-rollup package.",
+      "type": "major"
+    }
+  ],
+  "packageName": "@gulp-utils/gulp-core-build-rollup",
+  "email": "tnc1997@virginmedia.com"
+}
