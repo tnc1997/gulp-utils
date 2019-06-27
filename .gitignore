@@ -1,3 +1,5 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
 # Logs
 *.log
 npm-debug.log*
@@ -61,3 +63,17 @@ temp
 # Rush files
 common/temp/**
 package-deps.json
+
+# Compiled output
+*/*/dist
+*/*/lib
+*/*/temp
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
