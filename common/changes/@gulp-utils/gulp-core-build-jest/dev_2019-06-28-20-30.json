@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@gulp-utils/gulp-core-build-jest",
+      "comment": "Fix error caused by missing jest-silent-reporter module.",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@gulp-utils/gulp-core-build-jest",
+  "email": "tnc1997@virginmedia.com"
+}
