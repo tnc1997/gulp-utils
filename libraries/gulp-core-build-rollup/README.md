@@ -3,7 +3,7 @@
 `gulp-core-build-rollup` is a `gulp-core-build` subtask which introduces the ability to bundle various source files into a set of bundles, using rollup.
 
 [![npm version](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-rollup.svg)](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-rollup)
-[![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-rollup.svg)](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-rollup)
+[![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-rollup.svg)](https://david-dm.org/tnc1997/gulp-utils?path=libraries/gulp-core-build-rollup)
 
 # Tasks
 

@@ -321,6 +321,12 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@gulp-utils/gulp-core-build-jest",
+      "projectFolder": "libraries/gulp-core-build-jest",
+      "reviewCategory": "libraries",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@gulp-utils/gulp-core-build-rollup",
       "projectFolder": "libraries/gulp-core-build-rollup",
       "reviewCategory": "libraries",
