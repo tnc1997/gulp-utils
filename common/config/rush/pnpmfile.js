@@ -50,5 +50,44 @@ function readPackage(packageJson, context) {
     context.log("Fixed up dependencies for @types/vinyl");
   }
 
+  // @jest/core is in beta and has missing dependencies.
+  if (packageJson.name === "@jest/core") {
+    packageJson.dependencies["@types/yargs"] = "^12.0.0";
+    packageJson.dependencies["yargs"] = "^12.0.0";
+    context.log("Fixed up dependencies for @jest/core");
+  }
+
+  // @jest/environment is in beta and has missing dependencies.
+  if (packageJson.name === "@jest/environment") {
+    packageJson.dependencies["@types/jest"] = "^24.0.0";
+    packageJson.dependencies["jest"] = "^24.0.0";
+    context.log("Fixed up dependencies for @jest/environment");
+  }
+
+  // @jest/reporters is in beta and has missing dependencies.
+  if (packageJson.name === "@jest/reporters") {
+    packageJson.dependencies["istanbul-lib-coverage"] = "^2.0.0";
+    context.log("Fixed up dependencies for @jest/reporters");
+  }
+
+  // jest-cli is in beta and has missing dependencies.
+  if (packageJson.name === "jest-cli") {
+    packageJson.dependencies["@types/yargs"] = "^12.0.0";
+    packageJson.dependencies["yargs"] = "^12.0.0";
+    context.log("Fixed up dependencies for jest-cli");
+  }
+
+  // jest-resolve is in beta and has missing dependencies.
+  if (packageJson.name === "jest-resolve") {
+    packageJson.dependencies["jest-haste-map"] = "^24.0.0";
+    context.log("Fixed up dependencies for jest-resolve");
+  }
+
+  // jest-runtime is in beta and has missing dependencies.
+  if (packageJson.name === "jest-runtime") {
+    packageJson.dependencies["istanbul-lib-coverage"] = "^2.0.0";
+    context.log("Fixed up dependencies for jest-runtime");
+  }
+
   return packageJson;
 }

@@ -3,6 +3,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@jest/core",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@jest/test-result",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@jest/types",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
       "name": "@microsoft/api-documenter",
       "allowedCategories": [ "libraries" ]
     },
@@ -20,6 +32,10 @@
     },
     {
       "name": "gulp",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "jest-silent-reporter",
       "allowedCategories": [ "libraries" ]
     },
     {
