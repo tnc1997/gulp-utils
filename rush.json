@@ -111,7 +111,8 @@
      * or you could just have a single category called "default".
      */
     "reviewCategories": [
-      "libraries"
+      "libraries",
+      "samples"
     ],
     /**
      * A list of NPM package scopes that will be excluded from review.
@@ -331,6 +332,12 @@
       "projectFolder": "libraries/gulp-core-build-rollup",
       "reviewCategory": "libraries",
       "shouldPublish": true
+    },
+    {
+      "packageName": "gulp-core-build-jest-sample",
+      "projectFolder": "samples/gulp-core-build-jest",
+      "reviewCategory": "samples",
+      "shouldPublish": false
     }
   ]
 }

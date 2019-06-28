@@ -3,6 +3,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@gulp-utils/gulp-core-build-jest",
+      "allowedCategories": [ "samples" ]
+    },
+    {
       "name": "@jest/core",
       "allowedCategories": [ "libraries" ]
     },
@@ -20,7 +24,11 @@
     },
     {
       "name": "@microsoft/gulp-core-build",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "samples" ]
+    },
+    {
+      "name": "@microsoft/gulp-core-build-typescript",
+      "allowedCategories": [ "samples" ]
     },
     {
       "name": "@microsoft/node-library-build",
@@ -28,27 +36,31 @@
     },
     {
       "name": "@microsoft/rush-stack-compiler-3.2",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "samples" ]
     },
     {
       "name": "gulp",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "samples" ]
     },
     {
-      "name": "jest-silent-reporter",
-      "allowedCategories": [ "libraries" ]
+      "name": "jest",
+      "allowedCategories": [ "samples" ]
     },
     {
       "name": "rollup",
       "allowedCategories": [ "libraries" ]
     },
     {
+      "name": "ts-jest",
+      "allowedCategories": [ "samples" ]
+    },
+    {
       "name": "tslint",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "samples" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "samples" ]
     }
   ]
 }
