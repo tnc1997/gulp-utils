@@ -53,8 +53,7 @@ export class JestTask extends GulpTask<IJestTaskConfig> {
     jestOptions = {
       ...jestOptions,
       reporters: [
-        ...(jestOptions.reporters as string[] || []),
-        'jest-silent-reporter'
+        ...(jestOptions.reporters as string[] || [])
       ]
     };
 
