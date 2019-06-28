@@ -3,7 +3,7 @@
 `gulp-core-build-api-documenter` is a `gulp-core-build` subtask which introduces the ability to generate documentation, using api-documenter.
 
 [![npm version](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-api-documenter.svg)](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-api-documenter)
-[![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-api-documenter.svg)](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-api-documenter)
+[![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-api-documenter.svg)](https://david-dm.org/tnc1997/gulp-utils?path=libraries/gulp-core-build-api-documenter)
 
 # Tasks
 
