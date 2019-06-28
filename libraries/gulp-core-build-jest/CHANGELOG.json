@@ -1,0 +1,17 @@
+{
+  "name": "@gulp-utils/gulp-core-build-jest",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@gulp-utils/gulp-core-build-jest_v1.0.0",
+      "date": "Fri, 28 Jun 2019 18:12:41 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Add the @gulp-utils/gulp-core-build-jest package."
+          }
+        ]
+      }
+    }
+  ]
+}
