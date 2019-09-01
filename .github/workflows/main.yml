@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: '12.x'
+      - name: Run git config
+        run: |
+          git config --global user.email "tnc1997@virginmedia.com"
+          git config --global user.name "Thomas Clark"
+      - run: node ./common/scripts/install-run-rush.js install
+      - run: node ./common/scripts/install-run-rush.js rebuild --verbose
+      - run: node ./common/scripts/install-run-rush.js publish --apply --target-branch "master" --publish --set-access-level "public"

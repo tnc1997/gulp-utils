@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: '12.x'
+      - run: node ./common/scripts/install-run-rush.js check
+      - run: node ./common/scripts/install-run-rush.js change --verify
+      - run: node ./common/scripts/install-run-rush.js install
+      - run: node ./common/scripts/install-run-rush.js rebuild --verbose
