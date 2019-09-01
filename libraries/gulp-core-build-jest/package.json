@@ -1,6 +1,6 @@
 {
   "name": "@gulp-utils/gulp-core-build-jest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gulp Core Build Jest",
   "homepage": "https://github.com/tnc1997/gulp-utils#readme",
   "bugs": {
