@@ -10,7 +10,11 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: '12.x'
-      - run: node ./common/scripts/install-run-rush.js check
-      - run: node ./common/scripts/install-run-rush.js change --verify
-      - run: node ./common/scripts/install-run-rush.js install
-      - run: node ./common/scripts/install-run-rush.js rebuild --verbose
+      - name: Run rush check
+        run: node ./common/scripts/install-run-rush.js check
+      - name: Run rush change
+        run: node ./common/scripts/install-run-rush.js change --verify
+      - name: Run rush install
+        run: node ./common/scripts/install-run-rush.js install
+      - name: Run rush rebuild
+        run: node ./common/scripts/install-run-rush.js rebuild --verbose
