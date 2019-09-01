@@ -40,7 +40,9 @@ export class JestTask extends GulpTask<IJestTaskConfig> {
 
         jestOptions = require(path);
       } catch (err) {
-        throw new Error(`Error parsing jest config '${this.taskConfig.configPath}': ${err}`);
+        this.logError(`Error parsing jest config '${this.taskConfig.configPath}': ${err}`);
+
+        return;
       }
     } else if (this.taskConfig.config) {
       jestOptions = this.taskConfig.config;
@@ -63,6 +65,16 @@ export class JestTask extends GulpTask<IJestTaskConfig> {
     this.log(`Tests: ${result.results.numPassedTests} passed, ${result.results.numTotalTests} total`);
     this.log(`Snapshots: ${result.results.snapshot.total} total`);
     this.log(`Time: ${(Date.now() - result.results.startTime) / 1000} seconds`);
+
+    if (result.results.numFailedTests > 0) {
+      result.results.testResults
+        .filter(testResult => !!testResult.failureMessage)
+        .forEach(testResult => this.log(testResult.failureMessage || ''));
+
+      this.logError('One or more tests failed, please review the logs above.');
+
+      return;
+    }
   }
 
   public isEnabled(buildConfig: IBuildConfig): boolean {
