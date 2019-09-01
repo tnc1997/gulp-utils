@@ -34,34 +34,11 @@ function readPackage(packageJson, context) {
   //  packageJson.dependencies['log4js'] = '0.6.38';
   // }
 
-  // https://github.com/Microsoft/web-build-tools/issues/1197.
-  // https://github.com/Microsoft/web-build-tools/blob/master/core-build/gulp-core-build/package.json.
-  if (packageJson.name === "@types/gulp") {
-    packageJson.dependencies["@types/node"] = "8.5.8";
-    packageJson.dependencies["@types/orchestrator"] = "0.0.30";
-    packageJson.dependencies["@types/vinyl"] = "1.2.30";
-    context.log("Fixed up dependencies for @types/gulp");
-  }
-
-  // https://github.com/Microsoft/web-build-tools/issues/1197.
-  // https://github.com/Microsoft/web-build-tools/blob/master/core-build/gulp-core-build/package.json.
-  if (packageJson.name === "@types/vinyl") {
-    packageJson.dependencies["@types/node"] = "8.5.8";
-    context.log("Fixed up dependencies for @types/vinyl");
-  }
-
   // @jest/core is in beta and has missing dependencies.
   if (packageJson.name === "@jest/core") {
-    packageJson.dependencies["@types/yargs"] = "^12.0.0";
-    packageJson.dependencies["yargs"] = "^12.0.0";
+    packageJson.dependencies["@types/yargs"] = "^13.0.0";
+    packageJson.dependencies["yargs"] = "^13.0.0";
     context.log("Fixed up dependencies for @jest/core");
-  }
-
-  // @jest/environment is in beta and has missing dependencies.
-  if (packageJson.name === "@jest/environment") {
-    packageJson.dependencies["@types/jest"] = "^24.0.0";
-    packageJson.dependencies["jest"] = "^24.0.0";
-    context.log("Fixed up dependencies for @jest/environment");
   }
 
   // @jest/reporters is in beta and has missing dependencies.
@@ -72,8 +49,8 @@ function readPackage(packageJson, context) {
 
   // jest-cli is in beta and has missing dependencies.
   if (packageJson.name === "jest-cli") {
-    packageJson.dependencies["@types/yargs"] = "^12.0.0";
-    packageJson.dependencies["yargs"] = "^12.0.0";
+    packageJson.dependencies["@types/yargs"] = "^13.0.0";
+    packageJson.dependencies["yargs"] = "^13.0.0";
     context.log("Fixed up dependencies for jest-cli");
   }
 

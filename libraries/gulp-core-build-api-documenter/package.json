@@ -23,8 +23,9 @@
   "dependencies": {
     "@microsoft/api-documenter": "^7.0.0",
     "@microsoft/gulp-core-build": "^3.0.0",
-    "@types/gulp": "3.8.32",
-    "gulp": "~3.9.0"
+    "@types/node": "8.5.8",
+    "@types/gulp": "4.0.6",
+    "gulp": "^4.0.0"
   },
   "devDependencies": {
     "@microsoft/node-library-build": "^6.0.0",
