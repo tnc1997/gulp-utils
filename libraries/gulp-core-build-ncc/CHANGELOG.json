@@ -1,0 +1,17 @@
+{
+  "name": "@gulp-utils/gulp-core-build-ncc",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@gulp-utils/gulp-core-build-ncc_v1.0.0",
+      "date": "Sun, 08 Sep 2019 09:54:35 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Add the @gulp-utils/gulp-core-build-ncc package."
+          }
+        ]
+      }
+    }
+  ]
+}

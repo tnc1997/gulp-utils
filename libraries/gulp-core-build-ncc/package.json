@@ -1,6 +1,6 @@
 {
   "name": "@gulp-utils/gulp-core-build-ncc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Gulp Core Build ncc",
   "homepage": "https://github.com/tnc1997/gulp-utils#readme",
   "bugs": {
