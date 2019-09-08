@@ -1,7 +1,6 @@
 import {GulpTask, IBuildConfig} from '@microsoft/gulp-core-build';
 import * as ncc from '@zeit/ncc';
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from 'fs-extra';
 
 /**
  * @public
@@ -57,36 +56,18 @@ export class NccTask extends GulpTask<INccTaskConfig> {
       quiet: true
     });
 
-    const outputPath: string = this.resolvePath(this.taskConfig.outputFile || './dist/index.js');
-
-    outputPath.split(path.sep).reduce((previousValue, currentValue) => {
-      if (!fs.existsSync(previousValue)) {
-        fs.mkdirSync(previousValue);
-      }
-
-      return path.join(previousValue, currentValue);
-    });
+    const path: string = this.resolvePath(this.taskConfig.outputFile || './dist/index.js');
 
     if (!!output.code) {
-      await new Promise((resolve, reject) => {
-        fs.writeFile(
-          outputPath,
-          output.code,
-          'utf8',
-          (err) => err ? reject(err) : resolve()
-        );
-      });
+      await fs.ensureFile(path);
+
+      await fs.writeFile(path, output.code, 'utf8');
     }
 
     if (!!output.map) {
-      await new Promise((resolve, reject) => {
-        fs.writeFile(
-          `${outputPath}.map`,
-          output.map,
-          'utf8',
-          (err) => err ? reject(err) : resolve()
-        );
-      });
+      await fs.ensureFile(`${path}.map`);
+
+      await fs.writeFile(`${path}.map`, output.code, 'utf8');
     }
   }
 

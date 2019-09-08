@@ -51,6 +51,10 @@
       "allowedCategories": [ "libraries" ]
     },
     {
+      "name": "fs-extra",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
       "name": "gulp",
       "allowedCategories": [ "libraries", "samples" ]
     },

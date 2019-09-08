@@ -14,10 +14,12 @@ dependencies:
   '@rush-temp/gulp-core-build-ncc-sample': 'file:projects/gulp-core-build-ncc-sample.tgz'
   '@rush-temp/gulp-core-build-rollup': 'file:projects/gulp-core-build-rollup.tgz'
   '@ts-utils/array': 2.0.1
+  '@types/fs-extra': 8.0.0
   '@types/gulp': 4.0.6
   '@types/jest': 24.0.18
   '@types/node': 8.5.8
   '@zeit/ncc': 0.20.4
+  fs-extra: 8.1.0
   gulp: 4.0.2
   jest: 24.9.0
   rollup: 1.20.3
@@ -658,6 +660,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-DsknoBvD8s+RFfSGjmERJ7ZOP1HI0UZRA3FSI+Zakhrc/Gy26YQsLI+m5V5DHxroHRJqCDLKJp7Hixn8zyaF7g==
+  /@types/fs-extra/8.0.0:
+    dependencies:
+      '@types/node': 8.5.8
+    dev: false
+    resolution:
+      integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
   /@types/glob-stream/6.1.0:
     dependencies:
       '@types/glob': 7.1.1
@@ -2641,6 +2649,16 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
+  /fs-extra/8.1.0:
+    dependencies:
+      graceful-fs: 4.2.2
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: false
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
   /fs-mkdirp-stream/1.0.0:
     dependencies:
       graceful-fs: 4.2.2
@@ -7761,7 +7779,7 @@ packages:
     dev: false
     name: '@rush-temp/gulp-core-build-ncc-sample'
     resolution:
-      integrity: sha512-v4h4hXkHoCz4dwDZg2knIEJpnicaLJF0GlofkF/xqc64C9WXT9MVLS+bGYOF31zwyc68XVirTX5sKbSWNbsR8w==
+      integrity: sha512-Nzx13s8x0eTf4lWGkqgoUXPs+THeQk+xRrD8ku1GICjzpL0XRbadu2T9vOTiLnd9dFmjh9ofjKV4Ds0NkdK3jw==
       tarball: 'file:projects/gulp-core-build-ncc-sample.tgz'
     version: 0.0.0
   'file:projects/gulp-core-build-ncc.tgz':
@@ -7770,16 +7788,18 @@ packages:
       '@microsoft/gulp-core-build': 3.11.2
       '@microsoft/node-library-build': 6.1.7
       '@microsoft/rush-stack-compiler-3.2': 0.3.33
+      '@types/fs-extra': 8.0.0
       '@types/gulp': 4.0.6
       '@types/node': 8.5.8
       '@zeit/ncc': 0.20.4
+      fs-extra: 8.1.0
       gulp: 4.0.2
       tslint: 5.19.0_typescript@3.6.2
       typescript: 3.6.2
     dev: false
     name: '@rush-temp/gulp-core-build-ncc'
     resolution:
-      integrity: sha512-iGM0xrmROiFcrTRolgc84BflzuDo9RR1TkTGebBjR+KFNPvnOn8roi96Jy2bYjrIKQeNRdqub/jScVndoAoGEA==
+      integrity: sha512-+3Int6O2me96/HEuDqNbeHcyalI5EXdfJNG7OEuZwQ2+GG4Q1i4/Sv45SUGQ4tTxAsHuaKzlvBEdm1zeguc8VA==
       tarball: 'file:projects/gulp-core-build-ncc.tgz'
     version: 0.0.0
   'file:projects/gulp-core-build-rollup.tgz':
@@ -7816,10 +7836,12 @@ specifiers:
   '@rush-temp/gulp-core-build-ncc-sample': 'file:./projects/gulp-core-build-ncc-sample.tgz'
   '@rush-temp/gulp-core-build-rollup': 'file:./projects/gulp-core-build-rollup.tgz'
   '@ts-utils/array': ^2.0.0
+  '@types/fs-extra': ^8.0.0
   '@types/gulp': 4.0.6
   '@types/jest': ^24.0.0
   '@types/node': 8.5.8
   '@zeit/ncc': ~0.20.0
+  fs-extra: ^8.0.0
   gulp: ^4.0.0
   jest: ^24.0.0
   rollup: ^1.0.0
