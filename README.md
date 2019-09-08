@@ -18,6 +18,13 @@
 [![npm version](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-jest.svg)](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-jest)
 [![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-jest.svg)](https://david-dm.org/tnc1997/gulp-utils?path=libraries/gulp-core-build-jest)
 
+### [@gulp-utils/gulp-core-build-ncc](./libraries/gulp-core-build-ncc)
+
+`gulp-core-build-ncc` is a `gulp-core-build` subtask which introduces the ability to compile a Node.js module into a single file together with all its dependencies, using ncc.
+
+[![npm version](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-ncc.svg)](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-ncc)
+[![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-ncc.svg)](https://david-dm.org/tnc1997/gulp-utils?path=libraries/gulp-core-build-ncc)
+
 ### [@gulp-utils/gulp-core-build-rollup](./libraries/gulp-core-build-rollup)
 
 `gulp-core-build-rollup` is a `gulp-core-build` subtask which introduces the ability to bundle various source files into a set of bundles, using rollup.
