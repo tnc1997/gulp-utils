@@ -328,6 +328,12 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@gulp-utils/gulp-core-build-ncc",
+      "projectFolder": "libraries/gulp-core-build-ncc",
+      "reviewCategory": "libraries",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@gulp-utils/gulp-core-build-rollup",
       "projectFolder": "libraries/gulp-core-build-rollup",
       "reviewCategory": "libraries",
@@ -336,6 +342,12 @@
     {
       "packageName": "gulp-core-build-jest-sample",
       "projectFolder": "samples/gulp-core-build-jest",
+      "reviewCategory": "samples",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "gulp-core-build-ncc-sample",
+      "projectFolder": "samples/gulp-core-build-ncc",
       "reviewCategory": "samples",
       "shouldPublish": false
     }

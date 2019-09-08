@@ -7,6 +7,10 @@
       "allowedCategories": [ "samples" ]
     },
     {
+      "name": "@gulp-utils/gulp-core-build-ncc",
+      "allowedCategories": [ "samples" ]
+    },
+    {
       "name": "@jest/core",
       "allowedCategories": [ "libraries" ]
     },
@@ -37,6 +41,18 @@
     {
       "name": "@microsoft/rush-stack-compiler-3.2",
       "allowedCategories": [ "libraries", "samples" ]
+    },
+    {
+      "name": "@ts-utils/array",
+      "allowedCategories": [ "samples" ]
+    },
+    {
+      "name": "@zeit/ncc",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "fs-extra",
+      "allowedCategories": [ "libraries" ]
     },
     {
       "name": "gulp",
