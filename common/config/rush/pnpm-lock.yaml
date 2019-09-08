@@ -10,10 +10,14 @@ dependencies:
   '@rush-temp/gulp-core-build-api-documenter': 'file:projects/gulp-core-build-api-documenter.tgz'
   '@rush-temp/gulp-core-build-jest': 'file:projects/gulp-core-build-jest.tgz'
   '@rush-temp/gulp-core-build-jest-sample': 'file:projects/gulp-core-build-jest-sample.tgz'
+  '@rush-temp/gulp-core-build-ncc': 'file:projects/gulp-core-build-ncc.tgz'
+  '@rush-temp/gulp-core-build-ncc-sample': 'file:projects/gulp-core-build-ncc-sample.tgz'
   '@rush-temp/gulp-core-build-rollup': 'file:projects/gulp-core-build-rollup.tgz'
+  '@ts-utils/array': 2.0.1
   '@types/gulp': 4.0.6
   '@types/jest': 24.0.18
   '@types/node': 8.5.8
+  '@zeit/ncc': 0.20.4
   gulp: 4.0.2
   jest: 24.9.0
   rollup: 1.20.3
@@ -327,6 +331,19 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-/QslG5P5DtMubFZSqPNv6fCwkBiXKgQol25EAhXEQ/TEGYwHfOUjH3bztrYfa+oJKf/8vlZ/R4wYYgxWszdToQ==
+  /@microsoft/api-documenter/7.4.0:
+    dependencies:
+      '@microsoft/api-extractor-model': 7.3.4
+      '@microsoft/node-core-library': 3.14.1
+      '@microsoft/ts-command-line': 4.2.7
+      '@microsoft/tsdoc': 0.12.14
+      colors: 1.2.5
+      js-yaml: 3.13.1
+      resolve: 1.8.1
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-lqL9cVykS9Jgh4VxRSDo2TyMPwoytAUovPbdBjNzwYdkUfWbDo/dHWtutDHjtCdPc3ETXD7keo20FbDWRq1VGQ==
   /@microsoft/api-extractor-model/7.3.2:
     dependencies:
       '@microsoft/node-core-library': 3.14.0
@@ -335,6 +352,29 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2yNbQsQl5PI36l5WzHQshwjBHPe5IeIcmidWad0E+wjyaAxGMLx5pBp5AgXY2JG9S9VQjFmmGmqJJBXn8tzu+w==
+  /@microsoft/api-extractor-model/7.3.4:
+    dependencies:
+      '@microsoft/node-core-library': 3.14.1
+      '@microsoft/tsdoc': 0.12.14
+      '@types/node': 8.5.8
+    dev: false
+    resolution:
+      integrity: sha512-a9gXhWG7PWcUNpJRtxGZ/Vepq1ke5ES2B6NnBH0M3zT//vGYXymf7aOQepCHfmY4p1cJvvmJoJNGMwtoC0eF5A==
+  /@microsoft/api-extractor/7.3.11:
+    dependencies:
+      '@microsoft/api-extractor-model': 7.3.4
+      '@microsoft/node-core-library': 3.14.1
+      '@microsoft/ts-command-line': 4.2.7
+      '@microsoft/tsdoc': 0.12.14
+      colors: 1.2.5
+      lodash: 4.17.15
+      resolve: 1.8.1
+      source-map: 0.6.1
+      typescript: 3.5.3
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-i/hBovsbk1btBIQFWHHbAQdcXxL07+nYwF6wxDabtM+rJgySQ/flsjZJYXJV+ADlP0L3jyKdWZNF03M3zlQUlw==
   /@microsoft/api-extractor/7.3.9:
     dependencies:
       '@microsoft/api-extractor-model': 7.3.2
@@ -361,6 +401,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-3swr3RLZU67R2FUrypGxvH4zrenDk/uqJQdv9GJyFyraAMXk2S51WGjAbCek+g0qfcOfXD9Fmlr+dwzI8zMlYg==
+  /@microsoft/gulp-core-build-mocha/3.6.3:
+    dependencies:
+      '@microsoft/gulp-core-build': 3.11.2
+      '@types/node': 8.5.8
+      glob: 7.0.6
+      gulp: 4.0.2
+      gulp-istanbul: 0.10.4
+      gulp-mocha: 6.0.0
+    dev: false
+    resolution:
+      integrity: sha512-SbEuvdWxbsmflhOvl0AMSE+/mIuMQpl1tMyfIX1icxGhSF7+p/SHqxICDVUxbrGv5LNst6gwI5eeVoy8QD6/Fg==
   /@microsoft/gulp-core-build-typescript/8.1.29:
     dependencies:
       '@microsoft/gulp-core-build': 3.11.1
@@ -373,6 +424,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-HBv76tLaHrL2kuvt6RHoI9aOh/ddLFf1TsZav/MEajKponSBPuLNq0IzV8ZG3f4v/aNCcEH7qpatvJSGVklBKA==
+  /@microsoft/gulp-core-build-typescript/8.1.31:
+    dependencies:
+      '@microsoft/gulp-core-build': 3.11.2
+      '@microsoft/node-core-library': 3.14.1
+      '@types/node': 8.5.8
+      decomment: 0.9.2
+      glob: 7.0.6
+      glob-escape: 0.0.2
+      resolve: 1.8.1
+    dev: false
+    resolution:
+      integrity: sha512-GnwYcMpgDsYEXVljW9osa79LU7ce/QdVGABoxphXWMUeUhtG98nxkdLOaGpgsiCYlppmIiBL+J49KqleHhqiOA==
   /@microsoft/gulp-core-build/3.11.1:
     dependencies:
       '@microsoft/node-core-library': 3.14.0
@@ -412,6 +475,45 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Oh8ZU0K43SvExiO2JxG7W7M6c5yHT3yH97xmd1w/3Lc7A6WuzqPEaNc+1rhifQLwlJx9ynEAkj0UF9gacnzr7A==
+  /@microsoft/gulp-core-build/3.11.2:
+    dependencies:
+      '@microsoft/node-core-library': 3.14.1
+      '@types/chalk': 0.4.31
+      '@types/gulp': 4.0.6
+      '@types/node': 8.5.8
+      '@types/node-notifier': 0.0.28
+      '@types/orchestrator': 0.0.30
+      '@types/semver': 5.3.33
+      '@types/through2': 2.0.32
+      '@types/vinyl': 2.0.3
+      '@types/yargs': 0.0.34
+      colors: 1.2.5
+      del: 2.2.2
+      end-of-stream: 1.1.0
+      glob-escape: 0.0.2
+      globby: 5.0.0
+      gulp: 4.0.2
+      gulp-flatten: 0.2.0
+      gulp-if: 2.0.2
+      jest: 23.6.0
+      jest-cli: 22.4.4
+      jest-environment-jsdom: 22.4.3
+      jest-resolve: 22.4.3
+      jsdom: 11.11.0
+      lodash.merge: 4.6.2
+      merge2: 1.0.3
+      node-notifier: 5.0.2
+      object-assign: 4.1.1
+      orchestrator: 0.3.8
+      pretty-hrtime: 1.0.3
+      semver: 5.3.0
+      through2: 2.0.5
+      vinyl: 2.2.0
+      yargs: 4.6.0
+      z-schema: 3.18.4
+    dev: false
+    resolution:
+      integrity: sha512-WkSxtgsKrLjGjvrI6J/y/dwhaU3u0iYZNHS8DzEygnywBBEpM1ONjmtvzkhtd92MKIO8W9b9TOuu/r2v0ZK+fQ==
   /@microsoft/node-core-library/3.14.0:
     dependencies:
       '@types/fs-extra': 5.0.4
@@ -425,6 +527,19 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+gbTXTRfvR40hTH+C3Vno/RJ51sU/RZAyHb2bo9af8GCdOgxCxCs+qp2KCXklbpuolmIPFfbCmdTwv90yH5tJw==
+  /@microsoft/node-core-library/3.14.1:
+    dependencies:
+      '@types/fs-extra': 5.0.4
+      '@types/jju': 1.4.1
+      '@types/node': 8.5.8
+      '@types/z-schema': 3.16.31
+      colors: 1.2.5
+      fs-extra: 7.0.1
+      jju: 1.4.0
+      z-schema: 3.18.4
+    dev: false
+    resolution:
+      integrity: sha512-KVYef9kjK6lmGOOjYRctYFX3ymZ71xobweBftwP8hQS5JTBX+QqpAOvfiFQmlMgfJ7/TS7u3u3QjVzeztuz5cg==
   /@microsoft/node-library-build/6.1.5:
     dependencies:
       '@microsoft/gulp-core-build': 3.11.1
@@ -436,6 +551,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-lTgQGvz/UiotOiDN41SX0GaVzfN/tsfenIfq/yUzBaMJ5OTI66mPEvSrzvM+gVr5IVN2+e0koCgSS7tTo5hnJg==
+  /@microsoft/node-library-build/6.1.7:
+    dependencies:
+      '@microsoft/gulp-core-build': 3.11.2
+      '@microsoft/gulp-core-build-mocha': 3.6.3
+      '@microsoft/gulp-core-build-typescript': 8.1.31
+      '@types/gulp': 4.0.6
+      '@types/node': 8.5.8
+      gulp: 4.0.2
+    dev: false
+    resolution:
+      integrity: sha512-OCZKozcytsjp6zRIt4Ipd7JxWiNDBoXMdWLdOfCbQy7paQCkrzae/1eEgm25YapGMWXSKyeHi96qwqUF7g/KLg==
   /@microsoft/rush-stack-compiler-3.2/0.3.31:
     dependencies:
       '@microsoft/api-extractor': 7.3.9
@@ -448,6 +574,18 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-PxyjkUACYsCIUgz/8LMynVdkVPXYCAuABH127p+uLrMW21DIHRExyPXTWbJaImussPxsoSoitB6jVBlP8vf51w==
+  /@microsoft/rush-stack-compiler-3.2/0.3.33:
+    dependencies:
+      '@microsoft/api-extractor': 7.3.11
+      '@microsoft/node-core-library': 3.14.1
+      '@types/node': 8.5.8
+      tslint: 5.12.1_typescript@3.2.4
+      tslint-microsoft-contrib: 5.2.1_tslint@5.12.1+typescript@3.2.4
+      typescript: 3.2.4
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-vK0wFAgP4BVmP8D2a3kGM+zx+2FU0Wfmyphm1bgXKfRoMbZQzkYeh0VnxoutJRLf0/Kq4WC2ACmY3yB9TsWybQ==
   /@microsoft/ts-command-line/4.2.7:
     dependencies:
       '@types/argparse': 1.0.33
@@ -461,6 +599,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-5EzH1gHIonvvgA/xWRmVAJmRkTQj/yayUXyr66hFwNZiFE4j7lP8is9YQeXhwxGZEjO1PVMblAmFF0CyjNtPGw==
+  /@microsoft/tsdoc/0.12.14:
+    dev: false
+    resolution:
+      integrity: sha512-518yewjSga1jLdiLrcmpMFlaba5P+50b0TWNFUpC+SL9Yzf0kMi57qw+bMl+rQ08cGqH1vLx4eg9YFUbZXgZ0Q==
+  /@ts-utils/array/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-9/HiFMLUervPz2CLaTvdN6DU5IKQDVtVFCSbhixbEBmQ+0iH2vyQKSWIanhHPWsifd7pZ5utXcpLNDU3XP8p6g==
   /@types/argparse/1.0.33:
     dev: false
     resolution:
@@ -650,6 +796,11 @@ packages:
     dev: false
     resolution:
       integrity: sha1-LrHQCl5Ow/pYx2r94S4YK2bcXBw=
+  /@zeit/ncc/0.20.4:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-fmq+F/QxPec+k/zvT7HiVpk7oiGFseS6brfT/AYqmCUp6QFRK7vZf2Ref46MImsg/g2W3g5X6SRvGRmOAvEfdA==
   /abab/1.0.4:
     dev: false
     resolution:
@@ -4126,6 +4277,9 @@ packages:
       node: '>=6'
     peerDependencies:
       jest-resolve: '*'
+    peerDependenciesMeta:
+      jest-resolve:
+        optional: true
     resolution:
       integrity: sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
   /jest-regex-util/22.4.3:
@@ -7573,7 +7727,7 @@ packages:
     dev: false
     name: '@rush-temp/gulp-core-build-jest-sample'
     resolution:
-      integrity: sha512-lATMvTOHBS1ceJkygmclmiTo9bKjUtKZGaNGZIUKAFlibyIHcY1eZXHnWFh9JXawB47LTmPgsXb+pxw/p8xglQ==
+      integrity: sha512-WwprADfc/PF3C3X07GCcQ2HeQhW8HRRIkLpJx3+k3xKqCWVhDkm0vNWaHoXab2MCi6ZlRynM13s/en/2IXWOxA==
       tarball: 'file:projects/gulp-core-build-jest-sample.tgz'
     version: 0.0.0
   'file:projects/gulp-core-build-jest.tgz':
@@ -7595,6 +7749,39 @@ packages:
       integrity: sha512-kiPkzNqu6gt0TBKnnrCH4YZ3AhNZkrf9mPtX9mdZ5ve+6/u4yB68tKfrpNzGHDKTvtJuCgUFj76hZeBiTaYwmQ==
       tarball: 'file:projects/gulp-core-build-jest.tgz'
     version: 0.0.0
+  'file:projects/gulp-core-build-ncc-sample.tgz':
+    dependencies:
+      '@microsoft/gulp-core-build': 3.11.2
+      '@microsoft/gulp-core-build-typescript': 8.1.31
+      '@microsoft/rush-stack-compiler-3.2': 0.3.33
+      '@ts-utils/array': 2.0.1
+      gulp: 4.0.2
+      tslint: 5.19.0_typescript@3.6.2
+      typescript: 3.6.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-ncc-sample'
+    resolution:
+      integrity: sha512-v4h4hXkHoCz4dwDZg2knIEJpnicaLJF0GlofkF/xqc64C9WXT9MVLS+bGYOF31zwyc68XVirTX5sKbSWNbsR8w==
+      tarball: 'file:projects/gulp-core-build-ncc-sample.tgz'
+    version: 0.0.0
+  'file:projects/gulp-core-build-ncc.tgz':
+    dependencies:
+      '@microsoft/api-documenter': 7.4.0
+      '@microsoft/gulp-core-build': 3.11.2
+      '@microsoft/node-library-build': 6.1.7
+      '@microsoft/rush-stack-compiler-3.2': 0.3.33
+      '@types/gulp': 4.0.6
+      '@types/node': 8.5.8
+      '@zeit/ncc': 0.20.4
+      gulp: 4.0.2
+      tslint: 5.19.0_typescript@3.6.2
+      typescript: 3.6.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-ncc'
+    resolution:
+      integrity: sha512-iGM0xrmROiFcrTRolgc84BflzuDo9RR1TkTGebBjR+KFNPvnOn8roi96Jy2bYjrIKQeNRdqub/jScVndoAoGEA==
+      tarball: 'file:projects/gulp-core-build-ncc.tgz'
+    version: 0.0.0
   'file:projects/gulp-core-build-rollup.tgz':
     dependencies:
       '@microsoft/gulp-core-build': 3.11.1
@@ -7612,6 +7799,7 @@ packages:
       integrity: sha512-hTo4AK1nxnqMTxY/5PdUq+a+s1iReUH0hLV2XuxhdasljsWR8jQG315phsc6NR2vO4t/ab2Vo5sxYdy9WiY6Cw==
       tarball: 'file:projects/gulp-core-build-rollup.tgz'
     version: 0.0.0
+registry: ''
 specifiers:
   '@jest/core': ^24.0.0
   '@jest/test-result': ^24.0.0
@@ -7624,10 +7812,14 @@ specifiers:
   '@rush-temp/gulp-core-build-api-documenter': 'file:./projects/gulp-core-build-api-documenter.tgz'
   '@rush-temp/gulp-core-build-jest': 'file:./projects/gulp-core-build-jest.tgz'
   '@rush-temp/gulp-core-build-jest-sample': 'file:./projects/gulp-core-build-jest-sample.tgz'
+  '@rush-temp/gulp-core-build-ncc': 'file:./projects/gulp-core-build-ncc.tgz'
+  '@rush-temp/gulp-core-build-ncc-sample': 'file:./projects/gulp-core-build-ncc-sample.tgz'
   '@rush-temp/gulp-core-build-rollup': 'file:./projects/gulp-core-build-rollup.tgz'
+  '@ts-utils/array': ^2.0.0
   '@types/gulp': 4.0.6
   '@types/jest': ^24.0.0
   '@types/node': 8.5.8
+  '@zeit/ncc': ~0.20.0
   gulp: ^4.0.0
   jest: ^24.0.0
   rollup: ^1.0.0
