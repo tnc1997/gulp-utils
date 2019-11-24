@@ -1,0 +1,40 @@
+{
+  "name": "@gulp-utils/gulp-core-build-tsc",
+  "version": "0.0.0",
+  "description": "Gulp Core Build TSC",
+  "homepage": "https://github.com/tnc1997/gulp-utils#readme",
+  "bugs": {
+    "url": "https://github.com/tnc1997/gulp-utils/issues"
+  },
+  "license": "MIT",
+  "author": "Thomas Clark",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "directory": "libraries/gulp-core-build-tsc",
+    "type": "git",
+    "url": "https://github.com/tnc1997/gulp-utils.git"
+  },
+  "scripts": {
+    "build": "rimraf lib && tslint --project tsconfig.json && tsc --project tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@microsoft/gulp-core-build": "^3.0.0",
+    "glob": "^7.0.0",
+    "gulp": "^4.0.0",
+    "typescript": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.0.0",
+    "@types/gulp": "^4.0.0",
+    "@types/node": "^12.0.0",
+    "prettier": "^1.0.0",
+    "rimraf": "^3.0.0",
+    "tslint": "^5.0.0",
+    "tslint-config-prettier": "^1.0.0",
+    "tslint-plugin-prettier": "^2.0.0"
+  }
+}

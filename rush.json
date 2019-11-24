@@ -340,6 +340,12 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@gulp-utils/gulp-core-build-tsc",
+      "projectFolder": "libraries/gulp-core-build-tsc",
+      "reviewCategory": "libraries",
+      "shouldPublish": true
+    },
+    {
       "packageName": "gulp-core-build-jest-sample",
       "projectFolder": "samples/gulp-core-build-jest",
       "reviewCategory": "samples",
@@ -348,6 +354,12 @@
     {
       "packageName": "gulp-core-build-ncc-sample",
       "projectFolder": "samples/gulp-core-build-ncc",
+      "reviewCategory": "samples",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "gulp-core-build-tsc-sample",
+      "projectFolder": "samples/gulp-core-build-tsc",
       "reviewCategory": "samples",
       "shouldPublish": false
     }

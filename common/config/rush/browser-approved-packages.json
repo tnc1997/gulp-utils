@@ -11,6 +11,10 @@
       "allowedCategories": [ "samples" ]
     },
     {
+      "name": "@gulp-utils/gulp-core-build-tsc",
+      "allowedCategories": [ "samples" ]
+    },
+    {
       "name": "@jest/core",
       "allowedCategories": [ "libraries" ]
     },
@@ -40,6 +44,10 @@
     },
     {
       "name": "fs-extra",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "glob",
       "allowedCategories": [ "libraries" ]
     },
     {
