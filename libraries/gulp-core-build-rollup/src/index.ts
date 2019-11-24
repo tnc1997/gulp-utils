@@ -1,13 +1,12 @@
-import {RollupTask} from './RollupTask';
+import { RollupTask } from "./rollupTask";
 
-export {
-  IRollupTaskConfig,
-  RollupTask
-} from './RollupTask';
+export { IRollupTaskConfig } from "./iRollupTaskConfig";
+export { RollupTask } from "./rollupTask";
 
 /**
  * @public
  */
-export const rollup: RollupTask = new RollupTask(); // tslint:disable-line:export-name
+export const rollup: RollupTask = new RollupTask<{}>();
 
+// tslint:disable-next-line:no-default-export
 export default rollup;

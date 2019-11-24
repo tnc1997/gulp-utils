@@ -1,1 +1,1 @@
-export {main} from './main'; // tslint:disable-line:export-name
+export { main } from "./main";

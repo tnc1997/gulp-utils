@@ -1,8 +1,9 @@
-import {max, min} from '@ts-utils/array';
+/* tslint:disable:no-magic-numbers */
+import { max, min } from "@ts-utils/array";
 
-export function main(): void {
+export const main: () => void = (): void => {
   const array: number[] = [1, 2, 3];
 
   max(array);
   min(array);
-}
+};

@@ -31,18 +31,6 @@
       "allowedCategories": [ "libraries", "samples" ]
     },
     {
-      "name": "@microsoft/gulp-core-build-typescript",
-      "allowedCategories": [ "samples" ]
-    },
-    {
-      "name": "@microsoft/node-library-build",
-      "allowedCategories": [ "libraries" ]
-    },
-    {
-      "name": "@microsoft/rush-stack-compiler-3.2",
-      "allowedCategories": [ "libraries", "samples" ]
-    },
-    {
       "name": "@ts-utils/array",
       "allowedCategories": [ "samples" ]
     },
@@ -63,6 +51,14 @@
       "allowedCategories": [ "samples" ]
     },
     {
+      "name": "prettier",
+      "allowedCategories": [ "libraries", "samples" ]
+    },
+    {
+      "name": "rimraf",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
       "name": "rollup",
       "allowedCategories": [ "libraries" ]
     },
@@ -72,6 +68,14 @@
     },
     {
       "name": "tslint",
+      "allowedCategories": [ "libraries", "samples" ]
+    },
+    {
+      "name": "tslint-config-prettier",
+      "allowedCategories": [ "libraries", "samples" ]
+    },
+    {
+      "name": "tslint-plugin-prettier",
       "allowedCategories": [ "libraries", "samples" ]
     },
     {

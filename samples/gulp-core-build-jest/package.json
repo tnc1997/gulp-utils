@@ -9,13 +9,14 @@
   "devDependencies": {
     "@gulp-utils/gulp-core-build-jest": "^1.0.2",
     "@microsoft/gulp-core-build": "^3.0.0",
-    "@microsoft/gulp-core-build-typescript": "^8.0.0",
-    "@microsoft/rush-stack-compiler-3.2": "~0.3.0",
     "@types/jest": "^24.0.0",
     "gulp": "^4.0.0",
     "jest": "^24.0.0",
+    "prettier": "^1.0.0",
     "ts-jest": "^24.0.0",
     "tslint": "^5.0.0",
+    "tslint-config-prettier": "^1.0.0",
+    "tslint-plugin-prettier": "^2.0.0",
     "typescript": "^3.0.0"
   }
 }

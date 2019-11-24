@@ -1,9 +1,8 @@
 "use strict";
 
 const {ncc} = require("@gulp-utils/gulp-core-build-ncc");
-const {initialize, parallel, task} = require("@microsoft/gulp-core-build");
-const {tslintCmd} = require("@microsoft/gulp-core-build-typescript");
+const {initialize, task} = require("@microsoft/gulp-core-build");
 
-task("default", parallel(ncc, tslintCmd));
+task("default", ncc);
 
 initialize(require("gulp"));

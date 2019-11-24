@@ -1,14 +1,13 @@
-import {NccTask} from './NccTask';
+import { NccTask } from "./nccTask";
 
-export {
-  INccOptions,
-  INccTaskConfig,
-  NccTask
-} from './NccTask';
+export { INccOptions } from "./iNccOptions";
+export { INccTaskConfig } from "./iNccTaskConfig";
+export { NccTask } from "./nccTask";
 
 /**
  * @public
  */
-export const ncc: NccTask = new NccTask(); // tslint:disable-line:export-name
+export const ncc: NccTask = new NccTask();
 
+// tslint:disable-next-line:no-default-export
 export default ncc;

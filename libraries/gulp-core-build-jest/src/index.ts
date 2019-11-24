@@ -1,13 +1,12 @@
-import {JestTask} from './JestTask';
+import { JestTask } from "./jestTask";
 
-export {
-  IJestTaskConfig,
-  JestTask
-} from './JestTask';
+export { IJestTaskConfig } from "./iJestTaskConfig";
+export { JestTask } from "./jestTask";
 
 /**
  * @public
  */
-export const jest: JestTask = new JestTask(); // tslint:disable-line:export-name
+export const jest: JestTask = new JestTask();
 
+// tslint:disable-next-line:no-default-export
 export default jest;

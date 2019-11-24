@@ -1,14 +1,13 @@
-import {ApiDocumenterTask} from './ApiDocumenterTask';
+import { ApiDocumenterTask } from "./apiDocumenterTask";
 
-export {
-  ApiDocumenterTask,
-  Format,
-  IApiDocumenterTaskConfig
-} from './ApiDocumenterTask';
+export { ApiDocumenterTask } from "./apiDocumenterTask";
+export { IApiDocumenterTaskConfig } from "./iApiDocumenterTaskConfig";
+export { Format } from "./format";
 
 /**
  * @public
  */
-export const apiDocumenter: ApiDocumenterTask = new ApiDocumenterTask(); // tslint:disable-line:export-name
+export const apiDocumenter: ApiDocumenterTask = new ApiDocumenterTask();
 
+// tslint:disable-next-line:no-default-export
 export default apiDocumenter;

@@ -11,26 +11,29 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
+    "directory": "libraries/gulp-core-build-rollup",
     "type": "git",
-    "url": "https://github.com/tnc1997/gulp-utils"
+    "url": "https://github.com/tnc1997/gulp-utils.git"
   },
   "scripts": {
-    "build": "gulp --clean"
+    "build": "rimraf lib && tslint --project tsconfig.json && tsc --project tsconfig.json"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
     "@microsoft/gulp-core-build": "^3.0.0",
-    "@types/node": "8.5.8",
-    "@types/gulp": "4.0.6",
     "gulp": "^4.0.0",
     "rollup": "^1.0.0"
   },
   "devDependencies": {
-    "@microsoft/node-library-build": "^6.0.0",
-    "@microsoft/rush-stack-compiler-3.2": "~0.3.0",
+    "@types/gulp": "^4.0.0",
+    "@types/node": "^12.0.0",
+    "prettier": "^1.0.0",
+    "rimraf": "^3.0.0",
     "tslint": "^5.0.0",
+    "tslint-config-prettier": "^1.0.0",
+    "tslint-plugin-prettier": "^2.0.0",
     "typescript": "^3.0.0"
   }
 }
