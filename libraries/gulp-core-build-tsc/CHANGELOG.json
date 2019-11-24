@@ -1,0 +1,17 @@
+{
+  "name": "@gulp-utils/gulp-core-build-tsc",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@gulp-utils/gulp-core-build-tsc_v1.0.0",
+      "date": "Sun, 24 Nov 2019 13:52:21 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Add the @gulp-utils/gulp-core-build-tsc package."
+          }
+        ]
+      }
+    }
+  ]
+}
