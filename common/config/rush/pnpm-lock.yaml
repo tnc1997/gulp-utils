@@ -10,13 +10,17 @@ dependencies:
   '@rush-temp/gulp-core-build-ncc': 'file:projects/gulp-core-build-ncc.tgz'
   '@rush-temp/gulp-core-build-ncc-sample': 'file:projects/gulp-core-build-ncc-sample.tgz'
   '@rush-temp/gulp-core-build-rollup': 'file:projects/gulp-core-build-rollup.tgz'
+  '@rush-temp/gulp-core-build-tsc': 'file:projects/gulp-core-build-tsc.tgz'
+  '@rush-temp/gulp-core-build-tsc-sample': 'file:projects/gulp-core-build-tsc-sample.tgz'
   '@ts-utils/array': 2.0.2
   '@types/fs-extra': 8.0.1
+  '@types/glob': 7.1.1
   '@types/gulp': 4.0.6
   '@types/jest': 24.0.23
   '@types/node': 12.12.12
   '@zeit/ncc': 0.20.5
   fs-extra: 8.1.0
+  glob: 7.1.6
   gulp: 4.0.2
   jest: 24.9.0
   prettier: 1.19.1
@@ -2545,7 +2549,7 @@ packages:
     dependencies:
       array-union: 1.0.2
       arrify: 1.0.1
-      glob: 7.0.6
+      glob: 7.1.6
       object-assign: 4.1.1
       pify: 2.3.0
       pinkie-promise: 2.0.1
@@ -7405,6 +7409,42 @@ packages:
       integrity: sha512-SAzSK1o697TMDZrpuHly1TcQP1SY/C4dVpPWEDda7GTEDjacVCwpMyupeJLV5WqlcZr0qSbiAGmfCed1wc7aTA==
       tarball: 'file:projects/gulp-core-build-rollup.tgz'
     version: 0.0.0
+  'file:projects/gulp-core-build-tsc-sample.tgz':
+    dependencies:
+      '@microsoft/gulp-core-build': 3.12.5
+      gulp: 4.0.2
+      prettier: 1.19.1
+      tslint: 5.20.1_typescript@3.7.2
+      tslint-config-prettier: 1.18.0
+      tslint-plugin-prettier: 2.0.1_prettier@1.19.1+tslint@5.20.1
+      typescript: 3.7.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-tsc-sample'
+    resolution:
+      integrity: sha512-i+TKZkM+2T+n5/CRfO/7GolA4Ig7nIQ2VNcmC7bmnWIxeStiCQG8wQT0ApfMGkHLWS7SMCzdAHNOMqWnPRKn8w==
+      tarball: 'file:projects/gulp-core-build-tsc-sample.tgz'
+    version: 0.0.0
+  'file:projects/gulp-core-build-tsc.tgz':
+    dependencies:
+      '@microsoft/gulp-core-build': 3.12.5
+      '@types/glob': 7.1.1
+      '@types/gulp': 4.0.6
+      '@types/node': 12.12.12
+      glob: 7.1.6
+      gulp: 4.0.2
+      prettier: 1.19.1
+      rimraf: 3.0.0
+      tslint: 5.20.1_typescript@3.7.2
+      tslint-config-prettier: 1.18.0
+      tslint-plugin-prettier: 2.0.1_prettier@1.19.1+tslint@5.20.1
+      typescript: 3.7.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-tsc'
+    resolution:
+      integrity: sha512-Kh4RZCdO0qi64MXcOmjmmwN+eZvVfDpVhrIs7KYm/pcWAywA5XTT4hVTixP5Pugw7aaf8aeC3ou3vH0UzL1u+A==
+      tarball: 'file:projects/gulp-core-build-tsc.tgz'
+    version: 0.0.0
+registry: ''
 specifiers:
   '@jest/core': ^24.0.0
   '@jest/test-result': ^24.0.0
@@ -7417,13 +7457,17 @@ specifiers:
   '@rush-temp/gulp-core-build-ncc': 'file:./projects/gulp-core-build-ncc.tgz'
   '@rush-temp/gulp-core-build-ncc-sample': 'file:./projects/gulp-core-build-ncc-sample.tgz'
   '@rush-temp/gulp-core-build-rollup': 'file:./projects/gulp-core-build-rollup.tgz'
+  '@rush-temp/gulp-core-build-tsc': 'file:./projects/gulp-core-build-tsc.tgz'
+  '@rush-temp/gulp-core-build-tsc-sample': 'file:./projects/gulp-core-build-tsc-sample.tgz'
   '@ts-utils/array': ^2.0.0
   '@types/fs-extra': ^8.0.0
+  '@types/glob': ^7.0.0
   '@types/gulp': ^4.0.0
   '@types/jest': ^24.0.0
   '@types/node': ^12.0.0
   '@zeit/ncc': ~0.20.0
   fs-extra: ^8.0.0
+  glob: ^7.0.0
   gulp: ^4.0.0
   jest: ^24.0.0
   prettier: ^1.0.0
