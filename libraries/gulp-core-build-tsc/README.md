@@ -10,7 +10,7 @@
 ## TscTask
 
 ### Description
-This task invokes tsc on a package using a consumer-specified `tsconfig.json` on a package.
+This task invokes tsc on a package, using a consumer-specified `tsconfig.json`.
 
 ### Usage
 ```javascript

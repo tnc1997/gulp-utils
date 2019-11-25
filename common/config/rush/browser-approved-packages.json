@@ -3,6 +3,14 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@gulp-utils/gulp-core-build-api-documenter",
+      "allowedCategories": [ "samples" ]
+    },
+    {
+      "name": "@gulp-utils/gulp-core-build-api-extractor",
+      "allowedCategories": [ "samples" ]
+    },
+    {
       "name": "@gulp-utils/gulp-core-build-jest",
       "allowedCategories": [ "samples" ]
     },
@@ -28,6 +36,10 @@
     },
     {
       "name": "@microsoft/api-documenter",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@microsoft/api-extractor",
       "allowedCategories": [ "libraries" ]
     },
     {

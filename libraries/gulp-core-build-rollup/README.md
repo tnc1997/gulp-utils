@@ -10,7 +10,7 @@
 ## RollupTask
 
 ### Description
-This task invokes rollup using a consumer-specified `rollup.config.js` on a package.
+This task invokes rollup on a package, using a consumer-specified `rollup.config.js`.
 
 ### Command Line Options
 If the `--initrollup` flag is passed to the command line, this task will initialize a `rollup.config.js` which bundles `lib/index.js` into `dist/{packagename}.js` as a UMD module.
@@ -18,14 +18,14 @@ If the `--initrollup` flag is passed to the command line, this task will initial
 ### Usage
 ```javascript
 const {rollup} = require("@gulp-utils/gulp-core-build-rollup");
-const {initialize, parallel, serial, task} = require("@microsoft/gulp-core-build");
-const {tscCmd, tslintCmd} = require("@microsoft/gulp-core-build-typescript");
+const {tsc} = require("@gulp-utils/gulp-core-build-tsc");
+const {initialize, serial, task} = require("@microsoft/gulp-core-build");
 
 rollup.setConfig({
   configPath: "./rollup.config.js"
 });
 
-task("default", serial(parallel(tscCmd, tslintCmd), rollup));
+task("default", serial(tsc, rollup));
 
 initialize(require("gulp"));
 ```

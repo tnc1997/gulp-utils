@@ -15,14 +15,15 @@ This task invokes api-documenter on a package.
 ### Usage
 ```javascript
 const {apiDocumenter} = require("@gulp-utils/gulp-core-build-api-documenter");
-const {initialize, parallel, serial, task} = require("@microsoft/gulp-core-build");
-const {tscCmd, tslintCmd, apiExtractor} = require("@microsoft/gulp-core-build-typescript");
+const {apiExtractor} = require("@gulp-utils/gulp-core-build-api-extractor");
+const {tsc} = require("@gulp-utils/gulp-core-build-tsc");
+const {initialize, serial, task} = require("@microsoft/gulp-core-build");
 
 apiDocumenter.setConfig({
   format: "markdown"
 });
 
-task("default", serial(parallel(tscCmd, tslintCmd), apiExtractor, apiDocumenter));
+task("default", serial(tsc, apiExtractor, apiDocumenter));
 
 initialize(require("gulp"));
 ```

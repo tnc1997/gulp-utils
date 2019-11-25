@@ -11,6 +11,13 @@
 [![npm version](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-api-documenter.svg)](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-api-documenter)
 [![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-api-documenter.svg)](https://david-dm.org/tnc1997/gulp-utils?path=libraries/gulp-core-build-api-documenter)
 
+### [@gulp-utils/gulp-core-build-api-extractor](./libraries/gulp-core-build-api-extractor)
+
+`gulp-core-build-api-extractor` is a `gulp-core-build` subtask which introduces the ability to generate documentation, using api-extractor.
+
+[![npm version](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-api-extractor.svg)](https://badge.fury.io/js/%40gulp-utils%2Fgulp-core-build-api-extractor)
+[![Dependencies](https://david-dm.org/tnc1997/gulp-utils%3Fpath%3Dlibraries%2Fgulp-core-build-api-extractor.svg)](https://david-dm.org/tnc1997/gulp-utils?path=libraries/gulp-core-build-api-extractor)
+
 ### [@gulp-utils/gulp-core-build-jest](./libraries/gulp-core-build-jest)
 
 `gulp-core-build-jest` is a `gulp-core-build` subtask which introduces the ability to test packages, using jest.

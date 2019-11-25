@@ -1,0 +1,20 @@
+{
+  "name": "gulp-core-build-api-extractor-sample",
+  "version": "1.0.0",
+  "description": "Gulp Core Build API Extractor Sample",
+  "private": true,
+  "scripts": {
+    "build": "gulp --clean"
+  },
+  "devDependencies": {
+    "@gulp-utils/gulp-core-build-api-extractor": "^0.0.0",
+    "@gulp-utils/gulp-core-build-tsc": "^1.0.0",
+    "@microsoft/gulp-core-build": "^3.0.0",
+    "gulp": "^4.0.0",
+    "prettier": "^1.0.0",
+    "tslint": "^5.0.0",
+    "tslint-config-prettier": "^1.0.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.0.0"
+  }
+}

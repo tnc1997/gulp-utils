@@ -3,8 +3,12 @@ dependencies:
   '@jest/test-result': 24.9.0
   '@jest/types': 24.9.0
   '@microsoft/api-documenter': 7.7.0
+  '@microsoft/api-extractor': 7.6.2
   '@microsoft/gulp-core-build': 3.12.5
   '@rush-temp/gulp-core-build-api-documenter': 'file:projects/gulp-core-build-api-documenter.tgz'
+  '@rush-temp/gulp-core-build-api-documenter-sample': 'file:projects/gulp-core-build-api-documenter-sample.tgz'
+  '@rush-temp/gulp-core-build-api-extractor': 'file:projects/gulp-core-build-api-extractor.tgz'
+  '@rush-temp/gulp-core-build-api-extractor-sample': 'file:projects/gulp-core-build-api-extractor-sample.tgz'
   '@rush-temp/gulp-core-build-jest': 'file:projects/gulp-core-build-jest.tgz'
   '@rush-temp/gulp-core-build-jest-sample': 'file:projects/gulp-core-build-jest-sample.tgz'
   '@rush-temp/gulp-core-build-ncc': 'file:projects/gulp-core-build-ncc.tgz'
@@ -345,6 +349,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7gtxCxUMLDv3k1NE7MCaUaQeAwH5dEt/vjnq22cOUiCfiYOxdrvolab+WIXSNKV6rhe+AnIovR9tkxtxw5OiYA==
+  /@microsoft/api-extractor/7.6.2:
+    dependencies:
+      '@microsoft/api-extractor-model': 7.6.0
+      '@microsoft/node-core-library': 3.18.0
+      '@microsoft/ts-command-line': 4.3.5
+      '@microsoft/tsdoc': 0.12.14
+      colors: 1.2.5
+      lodash: 4.17.15
+      resolve: 1.8.1
+      source-map: 0.6.1
+      typescript: 3.7.2
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-4nK2uAWwC1nfzpEbyCwPfe/39aHkoWIhsodj8yrWTxMpH0eI7Ik/SdHtn3bDKVHIK67EnaR5//fnevpj9ACByw==
   /@microsoft/gulp-core-build/3.12.5:
     dependencies:
       '@microsoft/node-core-library': 3.18.0
@@ -7295,6 +7314,21 @@ packages:
       commander: 2.20.3
     resolution:
       integrity: sha512-DUOKC/IhbkdLKKiV89gw9DUauTV8U/8yJl1sjf6MtDmzevLKOF2duNJ495S3MFVjqZarr+qNGCPbkg4mu4PpLw==
+  'file:projects/gulp-core-build-api-documenter-sample.tgz':
+    dependencies:
+      '@microsoft/gulp-core-build': 3.12.5
+      gulp: 4.0.2
+      prettier: 1.19.1
+      tslint: 5.20.1_typescript@3.7.2
+      tslint-config-prettier: 1.18.0
+      tslint-plugin-prettier: 2.0.1_prettier@1.19.1+tslint@5.20.1
+      typescript: 3.7.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-api-documenter-sample'
+    resolution:
+      integrity: sha512-314/MaW/IYAbA6rhBwVQ7Ma2rJxXKVZJyWx+J8US5eI94677byJjYOf87aOCyriuAmjrFQ9Ho0braL1r5KaepQ==
+      tarball: 'file:projects/gulp-core-build-api-documenter-sample.tgz'
+    version: 0.0.0
   'file:projects/gulp-core-build-api-documenter.tgz':
     dependencies:
       '@microsoft/api-documenter': 7.7.0
@@ -7313,6 +7347,40 @@ packages:
     resolution:
       integrity: sha512-YA+AGqp+4v99PrtnCi2kh2Tq+e+64Pojb+g0xVXecmkrdiai78ymBBiyMrfhF6oG9TNzN4gQx7Luw0qRxjiUdQ==
       tarball: 'file:projects/gulp-core-build-api-documenter.tgz'
+    version: 0.0.0
+  'file:projects/gulp-core-build-api-extractor-sample.tgz':
+    dependencies:
+      '@microsoft/gulp-core-build': 3.12.5
+      gulp: 4.0.2
+      prettier: 1.19.1
+      tslint: 5.20.1_typescript@3.7.2
+      tslint-config-prettier: 1.18.0
+      tslint-plugin-prettier: 2.0.1_prettier@1.19.1+tslint@5.20.1
+      typescript: 3.7.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-api-extractor-sample'
+    resolution:
+      integrity: sha512-4mg+GBMYgVYsWNELXG1C8eqyNUkbb6/hVqmXL4UnfdrxQvEYSaCpenx+8n8+yTsB48si7WsEGNpubotptIBZIg==
+      tarball: 'file:projects/gulp-core-build-api-extractor-sample.tgz'
+    version: 0.0.0
+  'file:projects/gulp-core-build-api-extractor.tgz':
+    dependencies:
+      '@microsoft/api-extractor': 7.6.2
+      '@microsoft/gulp-core-build': 3.12.5
+      '@types/gulp': 4.0.6
+      '@types/node': 12.12.12
+      gulp: 4.0.2
+      prettier: 1.19.1
+      rimraf: 3.0.0
+      tslint: 5.20.1_typescript@3.7.2
+      tslint-config-prettier: 1.18.0
+      tslint-plugin-prettier: 2.0.1_prettier@1.19.1+tslint@5.20.1
+      typescript: 3.7.2
+    dev: false
+    name: '@rush-temp/gulp-core-build-api-extractor'
+    resolution:
+      integrity: sha512-u5HTjqfajoNaPgYAY3X2tFmKY120kYBovyxVvhTSk1dRNYJKa+FTBWw/jKcNyyRsZtkktT1BLXVpPXwGPd028A==
+      tarball: 'file:projects/gulp-core-build-api-extractor.tgz'
     version: 0.0.0
   'file:projects/gulp-core-build-jest-sample.tgz':
     dependencies:
@@ -7450,8 +7518,12 @@ specifiers:
   '@jest/test-result': ^24.0.0
   '@jest/types': ^24.0.0
   '@microsoft/api-documenter': ^7.0.0
+  '@microsoft/api-extractor': ^7.0.0
   '@microsoft/gulp-core-build': ^3.0.0
   '@rush-temp/gulp-core-build-api-documenter': 'file:./projects/gulp-core-build-api-documenter.tgz'
+  '@rush-temp/gulp-core-build-api-documenter-sample': 'file:./projects/gulp-core-build-api-documenter-sample.tgz'
+  '@rush-temp/gulp-core-build-api-extractor': 'file:./projects/gulp-core-build-api-extractor.tgz'
+  '@rush-temp/gulp-core-build-api-extractor-sample': 'file:./projects/gulp-core-build-api-extractor-sample.tgz'
   '@rush-temp/gulp-core-build-jest': 'file:./projects/gulp-core-build-jest.tgz'
   '@rush-temp/gulp-core-build-jest-sample': 'file:./projects/gulp-core-build-jest-sample.tgz'
   '@rush-temp/gulp-core-build-ncc': 'file:./projects/gulp-core-build-ncc.tgz'
