@@ -3,7 +3,6 @@
 import { default as Rollup, RollupOptions } from "rollup";
 
 /**
- * A gulp core build subtask which introduces the ability to bundle various source files into a set of bundles, using rollup.
  * @public
  */
 export interface IRollupTaskConfig {

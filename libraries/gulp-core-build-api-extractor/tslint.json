@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "tslint:all",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+
+    "no-inferrable-types": false,
+    "no-redundant-jsdoc": false,
+    "no-use-before-declare": false,
+    "strict-type-predicates": false
+  }
+}
