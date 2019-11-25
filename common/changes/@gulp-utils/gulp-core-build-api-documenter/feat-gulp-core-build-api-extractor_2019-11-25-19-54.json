@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@gulp-utils/gulp-core-build-api-documenter",
+      "comment": "",
+      "type": "none"
+    }
+  ],
+  "packageName": "@gulp-utils/gulp-core-build-api-documenter",
+  "email": "tnc1997@virginmedia.com"
+}
