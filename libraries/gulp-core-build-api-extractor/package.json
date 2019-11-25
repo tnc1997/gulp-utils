@@ -1,6 +1,6 @@
 {
   "name": "@gulp-utils/gulp-core-build-api-extractor",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Gulp Core Build API Extractor",
   "homepage": "https://github.com/tnc1997/gulp-utils#readme",
   "bugs": {

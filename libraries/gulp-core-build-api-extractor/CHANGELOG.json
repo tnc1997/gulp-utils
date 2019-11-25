@@ -1,0 +1,17 @@
+{
+  "name": "@gulp-utils/gulp-core-build-api-extractor",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@gulp-utils/gulp-core-build-api-extractor_v1.0.0",
+      "date": "Mon, 25 Nov 2019 20:09:02 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Add the @gulp-utils/gulp-core-build-api-extractor package."
+          }
+        ]
+      }
+    }
+  ]
+}
